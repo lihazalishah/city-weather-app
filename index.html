@@ -13,6 +13,8 @@
    input city name:  <input id="input"/>
    <button onclick="checkweather()">check weather</button>
    <p id="result"></p>
+   <p id="Error"></p>
+    
 </body>
 </html>
 <script>
@@ -30,6 +32,8 @@ function checkweather(){
     .catch(function (error) {
     
     console.log(error);
+                            document.getElementById("Error").innerText = error;
+
   })
 
 
